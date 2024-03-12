@@ -1,5 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Koulen&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Forum&family=Gowun+Dodum&family=Koulen&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Forum&family=Gowun+Dodum&family=Koulen&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Mate+SC&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Buenard:wght@400;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Forum&family=Gowun+Dodum&family=Karla:ital,wght@0,200..800;1,200..800&family=Khula:wght@300;400;600;700;800&family=Koulen&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Mate+SC&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Buenard:wght@400;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Forum&family=Gowun+Dodum&family=Julius+Sans+One&family=Karla:ital,wght@0,200..800;1,200..800&family=Khula:wght@300;400;600;700;800&family=Koulen&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Mate+SC&display=swap");
 .App {
-  text-align: center;
+  background-color: #454545;
 }
 
 .App-logo {
@@ -34,5 +41,453 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+.squareborder {
+  width: 100%;
+  height: 1.5vh;
+  background-color: white;
+}
+.shopnowstyle {
+  color: white;
+  font-family: "Libre Caslon Text", serif;
+  font-weight: 400;
+  text-shadow: 2px 2px 4px rgb(41, 41, 41);
+  font-size: 4vh;
+  width: 100%;
+  text-align: center;
+}
+.triangle {
+  width: 100%;
+  height: 400px;
+  background: white;
+  clip-path: polygon(46% 0%, 50% 8%, 54% 0%);
+  filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5));
+  margin-top: -1px;
+}
+@media only screen and (max-width: 1000px) {
+  .triangle {
+    height: 200px;
+    clip-path: polygon(-10% 0%, 50% 100%, 110% 0%);
+  }
+}
+
+.backgroundimage {
+  width: 100%;
+  height: 100%;
+}
+.photosize {
+  width: 100%;
+  height: 0%;
+  background-color: transparent;
+  top: 0;
+  display: block;
+}
+.catphotos {
+  position: relative;
+  overflow: hidden;
+  object-position: 25% 25%;
+  margin-right: 5%;
+  text-align: center;
+}
+.catphotos:hover h1 {
+  display: block;
+  transition: 0.3s;
+}
+.catphotos h1 {
+  position: relative;
+  z-index: 10px;
+  color: white;
+  width: 100%;
+  height: 50px;
+  top: -50%;
+  font-size: 20px;
+  display: none;
+  font-family: "Buenard", serif;
+}
+.catphotos img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+.catcontainer {
+  width: 95%;
+  height: 50vh;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  position: relative;
+  margin: auto;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+.catcontainer::after {
+  height: max-content;
+}
+.girlpic {
+  object-position: 100% 80%;
+  transition: 0.3s;
+}
+.girlpic:hover {
+  filter: brightness(50%);
+}
+.bagpic {
+  transition: 0.3s;
+
+  object-position: 100% 80%;
+}
+.bagpic:hover {
+  filter: brightness(50%);
+}
+.guypic {
+  transition: 0.3s;
+  object-position: 100% 30%;
+}
+.guypic:hover {
+  filter: brightness(50%);
+}
+.eeeborders {
+  position: relative;
+  background-color: #222121;
+  padding: 10px;
+  width: 95%;
+  height: 100%;
+  margin-left: 2%;
+}
+.bordersborder1 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  margin-top: 2%;
+  margin-bottom: 3%;
+}
+.navbar {
+  position: fixed;
+  position: -webkit-sticky;
+  height: 70px;
+  width: 100%;
+  background-color: transparent;
+  z-index: 3;
+  top: 0;
+  right: 0;
+  margin: 0 auto;
+
+  text-align: center;
+
+  justify-content: center;
+}
+@media only screen and (max-width: 500px) {
+  .navbar {
+    width: 50%;
+  }
+}
+
+.backphotos {
+  width: 100%;
+  height: 50%;
+}
+.backphotossize {
+  width: 100%;
+  height: 50%;
+  top: 0;
+  z-index: 3;
+}
+.Websitename {
+  color: rgb(255, 255, 255);
+  font-size: 5vh;
+  font-weight: 400;
+  position: absolute;
+  font-family: "Lora", serif;
+  text-shadow: 1px 1px #424141;
+}
+.hatdiv {
+  margin-top: 3%;
+  position: relative;
+  width: 100%;
+  height: 60vh;
+  overflow: hidden;
+  margin-bottom: 3%;
+}
+.hatdiv img {
+  object-position: 25% 30%;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.fontstyle {
+  font-family: "Koulen", sans-serif;
+  font-weight: 400;
+  color: white;
+  font-size: 40px;
+  right: 0;
+  margin-left: 5.5%;
+  letter-spacing: -1px;
+  display: inline-block;
+  position: relative;
+  margin-right: 2%;
+}
+.fontstyleline {
+  background-color: rgb(127, 127, 127);
+  width: 70%;
+  height: 1.5px;
+  display: inline-block;
+  position: relative;
+  top: -10px;
+}
+@media only screen and (max-width: 980px) {
+  .fontstyleline {
+    width: 65%;
+  }
+  .fontstyle {
+    font-size: 30px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .fontstyleline {
+    width: 53%;
+  }
+}
+
+@media only screen and (max-width: 1500px) {
+  .productsmaller {
+    display: none;
+  }
+}
+
+.arrowsright1 {
+  position: relative;
+  width: 5%;
+  height: 5%;
+  margin-right: -4%;
+  margin-left: -1%;
+  margin-top: -660px;
+}
+.arrowbuttonright {
+  width: 3%;
+  height: 30vh;
+  position: relative;
+  display: inline-block;
+  top: -35vh;
+}
+.arrowbuttonleft {
+  width: 3%;
+  height: 30vh;
+  position: relative;
+  display: inline-block;
+  margin-left: 1%;
+  margin-right: -6%;
+  top: -35vh;
+}
+.arrowsright {
+  position: relative;
+  width: 9vh;
+  height: 10vh;
+}
+.arrowsleft {
+  position: relative;
+  width: 9vh;
+  height: 10vh;
+}
+#leftarrrow {
+  margin-right: -10%;
+}
+#rightarrow {
+  margin-left: -1.5%;
+}
+
+.collageback {
+  background-color: #222121;
+  width: 100%;
+  height: 150vh;
+  overflow: hidden;
+  position: "relative";
+  margin-bottom: 2%;
+  box-shadow: 2px 1px 7px #222121;
+}
+.Newcollecttext {
+  color: white;
+  font-family: "Koulen", sans-serif;
+  font-weight: 400;
+  text-shadow: 2px 2px 4px rgb(41, 41, 41);
+  font-size: 4vh;
+}
+.collectioname {
+  color: white;
+  font-family: "Libre Caslon Text", serif;
+  font-weight: 400;
+  text-shadow: 2px 2px 4px rgb(41, 41, 41);
+  font-size: 7vh;
+  margin-top: -1%;
+}
+#collectionline {
+  background-color: rgb(61, 60, 60);
+  width: 60%;
+  height: 2.5px;
+  position: relative;
+  margin-left: 20%;
+}
+.descriptioncoll {
+  font-family: "Mate SC", serif;
+  color: white;
+  font-weight: 400;
+  text-shadow: 2px 2px 4px rgb(41, 41, 41);
+  font-size: 2vh;
+  width: 50%;
+  position: absolute;
+  text-align: center;
+  margin-top: 1%;
+  margin-left: 25%;
+}
+.group1div {
+  width: 40%;
+  height: 100%;
+  display: inline-block;
+  position: relative;
+}
+.group2div {
+  width: 60%;
+  height: 100%;
+  display: inline-block;
+  position: relative;
+}
+.group1photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 10% 5%;
+}
+.fontstyle2 {
+  font-family: "Koulen", sans-serif;
+  font-weight: 400;
+  color: white;
+  font-size: 40px;
+  margin-left: 5.5%;
+  letter-spacing: -1px;
+  display: inline-block;
+  position: relative;
+  margin-right: 1%;
+}
+.fontstyle1 {
+  font-family: "Koulen", sans-serif;
+  font-weight: 400;
+  color: white;
+  font-size: 40px;
+  right: 0;
+  margin-left: 9.5%;
+  letter-spacing: -1px;
+  position: relative;
+  margin-top: -10px;
+}
+.fontstyleline2 {
+  background-color: rgb(127, 127, 127);
+  width: 78%;
+  height: 1.5px;
+  display: inline-block;
+  position: relative;
+}
+@media only screen and (max-width: 900px) {
+  .arrowsright {
+    margin-top: -450px;
+    width: 5%;
+    height: 5%;
+  }
+  .arrowsright1 {
+    width: 4%;
+    height: 4%;
+    margin-top: -550px;
+  }
+
+  #leftarrrow {
+    margin-left: 0%;
+    margin-right: -4%;
+  }
+}
+@media only screen and (max-width: 980px) {
+  .descriptioncoll {
+    width: 80%;
+    right: 10%;
+  }
+  #collectionline {
+    width: 80%;
+    right: 10%;
+  }
+  .fontstyle2 {
+    font-size: 30px;
+  }
+  .fontstyle1 {
+    font-size: 30px;
+  }
+}
+.fullscreenmenu {
+  position: fixed;
+  position: -webkit-sticky;
+  z-index: 100;
+  width: 100%;
+  height: 100vh;
+}
+.halfscreen {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 80%;
+  height: 100%;
+  display: inline-block;
+  position: relative;
+}
+.fullscreenmenu.active {
+  opacity: 1;
+  visibility: visible;
+}
+.fullscreenmenu.inactive {
+  display: none;
+
+  opacity: 0;
+  visibility: hidden;
+}
+.sidebar {
+  z-index: 40;
+  width: 20%;
+  height: 100%;
+  background-color: #1b1b1b;
+  float: right;
+  text-align: left;
+  display: inline-block;
+  position: relative;
+}
+
+.contentdiv {
+  margin-top: 10%;
+}
+.contentdiv h1 {
+  color: rgb(161, 160, 160);
+  font-family: "Julius Sans One", sans-serif;
+  font-weight: 400;
+  padding: 10px;
+  font-size: 20px;
+  padding-left: 30px;
+  width: 80%;
+  margin-left: 10%;
+  margin-bottom: 3%;
+}
+.contentdiv h1:hover {
+  border-color: #282727;
+  border-radius: 30px;
+  background-color: #282727;
+  transition: 0.3s;
+  color: white;
+}
+.slick-next {
+  background: url("../src/images/rightarrow.png") center center no-repeat !important;
+
+  &::before {
+    display: none;
+  }
+}
+
+.slick-prev {
+  background: url("../src/images/leftarrow.png") center center no-repeat !important;
+
+  &::before {
+    display: none;
   }
 }

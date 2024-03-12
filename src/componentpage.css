@@ -1,0 +1,156 @@
+@import url(https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Forum&family=Koulen&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Forum&family=Gowun+Dodum&family=Koulen&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Forum&family=Gowun+Dodum&family=Karla:ital,wght@0,200..800;1,200..800&family=Koulen&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Mate+SC&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Forum&family=Gowun+Dodum&family=Karla:ital,wght@0,200..800;1,200..800&family=Khula:wght@300;400;600;700;800&family=Koulen&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Mate+SC&display=swap);
+
+.Photo1 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
+  box-shadow: 2px 2px 5px rgb(27, 26, 26);
+  object-position: 10% 30%;
+}
+.PhotoDiv {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.producttext {
+  color: white;
+  font-size: 25px;
+  font-family: Forum, serif;
+  font-weight: 400;
+}
+.heartlist {
+  width: 4vh;
+  height: 4vh;
+  display: inline-block;
+  float: right;
+  position: relative;
+  margin-top: 4px;
+  fill: none;
+  -webkit-appearance: none;
+  background: url("./images/unfilledheart.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.heartlist:checked {
+  background: url("./images/filledheart.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.pricetext {
+  font-family: Gowun Dodum, sans-serif;
+  font-weight: 400px;
+  color: rgb(158, 155, 155);
+  font-size: 15px;
+  margin-top: -5px;
+}
+.Photo1smaller {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
+  box-shadow: 2px 2px 5px rgb(27, 26, 26);
+  object-position: 10% 30%;
+  transition: 0.3s;
+}
+.PhotoDivsmaller {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.fulldivphoto {
+  width: 95%;
+  position: relative;
+  display: inline-block;
+  margin-left: 1.5%;
+}
+.smallerdiv {
+  width: 100%;
+  height: 70vh;
+}
+@media only screen and (max-width: 1500px) {
+  .fulldivphoto {
+    width: 100;
+  }
+  .smallerdiv {
+    height: 50vh;
+  }
+  .producttext {
+    font-size: 20px;
+  }
+  .pricetext {
+    font-size: 13px;
+  }
+  .heartlist {
+    width: 3vh;
+    height: 3vh;
+  }
+}
+
+.footerdiv {
+  width: 100%;
+  height: 55vh;
+  background-color: #181818;
+  position: relative;
+  text-align: center;
+}
+.Websitenamefooter {
+  color: rgb(133, 133, 133);
+  font-family: Koulen, sans-serif;
+  font-weight: 400;
+  font-size: 300%;
+  padding-top: 3%;
+}
+.footerlist li {
+  color: #565656;
+  width: 5%;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  font-family: Karla, sans-serif;
+  margin-left: 0px;
+}
+.footerline {
+  width: 40%;
+  height: 1px;
+  background-color: rgb(133, 133, 133);
+  margin-top: 2%;
+  position: relative;
+  left: 30%;
+}
+.copyrightfooter {
+  color: #6b6b6b;
+  font-family: Khula, sans-serif;
+  font-size: 17px;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+}
+.footerfollow {
+  color: #6b6b6b;
+  font-family: Karla, sans-serif;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.wishlistsm {
+  display: inline-block;
+  position: relative;
+  float: right;
+  margin-top: 4px;
+  width: 5vh;
+  height: 5vh;
+}
+@media only screen and (max-width: 1230px) {
+  .footerlist li {
+    width: 100%;
+    display: block;
+  }
+}
+@media only screen and (max-width: 900px) {
+}
