@@ -104,7 +104,9 @@
   font-size: 20px;
   display: none;
   font-family: "Buenard", serif;
+  pointer-events: none;
 }
+
 .catphotos img {
   object-fit: cover;
   height: 100%;
@@ -131,6 +133,7 @@
 .girlpic:hover {
   filter: brightness(50%);
 }
+
 .bagpic {
   transition: 0.3s;
 

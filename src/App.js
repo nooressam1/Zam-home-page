@@ -105,7 +105,7 @@ function App() {
           <div className="catcontainer">
             <div className="catphotos">
               <img src={photogirl} className="girlpic" />
-              <h1>Girls clothing</h1>
+              <h1 classname="shoptext">Girls clothing</h1>
             </div>
 
             <div className="catphotos">
