@@ -9,6 +9,7 @@ const Navbar = (props) => {
       <div className="navbar">
         <div>
           <button
+            id="menuicon"
             className=" w-12 h-10 inline-block	float-right  my-1.5 mr-4"
             onClick={() => {
               setOpen(!open);

@@ -19,6 +19,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import sliderproduct from "./component/sliderproduct";
 import Sliderproduct from "./component/sliderproduct";
+import Navbattail from "./component/navbattail";
 
 function SampleNextArrow(props) {
   const { className, style, onClick } = props;
@@ -68,6 +69,7 @@ function App() {
   return (
     <div className="App">
       <Navbar page={"home"}></Navbar>
+
       {/*} <div
         style={{
           backgroundImage: `url(${background1})`,
@@ -122,56 +124,9 @@ function App() {
 
       <h1 className="fontstyle">POPULAR ITEMS</h1>
       <div className="fontstyleline"></div>
-      <div style={{ marginTop: "2%", marginBottom: "2%" }}>
-        <div
-          style={{
-            marginLeft: "5%",
-            width: "90%",
-            display: "inline-block",
-            position: "relative",
-          }}
-        >
-          <Slider {...settings}>
-            <Productsquare
-              photos={pufferjacket}
-              name="Puffer Jacket"
-              price="LE 500.99 "
-              pic2={pufferjacket2}
-            ></Productsquare>
-            <Productsquare
-              photos={pufferjacket}
-              name="Puffer Jacket"
-              price="LE 500.99 "
-              pic2={pufferjacket2}
-            ></Productsquare>
-            <Productsquare
-              photos={pufferjacket}
-              name="Puffer Jacket"
-              price="LE 500.99 "
-              pic2={pufferjacket2}
-            ></Productsquare>
-            <Productsquare
-              photos={pufferjacket}
-              name="Puffer Jacket"
-              price="LE 500.99 "
-              pic2={pufferjacket2}
-            ></Productsquare>
-            <Productsquare
-              photos={pufferjacket}
-              name="Puffer Jacket"
-              price="LE 500.99 "
-              pic2={pufferjacket2}
-            ></Productsquare>
-            <Productsquare
-              photos={pufferjacket}
-              name="Puffer Jacket"
-              price="LE 500.99 "
-              pic2={pufferjacket2}
-            ></Productsquare>
-          </Slider>
-        </div>
-      </div>
+
       <div className="collageback">
+        */}
         <div
           classname
           style={{
@@ -215,62 +170,12 @@ function App() {
       <h1 className="fontstyle">One sale</h1>
       <div className="fontstyleline"></div>
 
-      <Sliderproduct></Sliderproduct>
       <div className="hatdiv">
         <img src={girlhat} />
       </div>
       <h1 className="fontstyle2">You may</h1>
       <div className="fontstyleline2"></div>
       <h1 className="fontstyle1">also like</h1>
-      <div style={{ marginTop: "2%", marginBottom: "2%" }}>
-        <div
-          style={{
-            marginLeft: "5%",
-            width: "90%",
-            display: "inline-block",
-            position: "relative",
-          }}
-        >
-          <Slider {...settings}>
-            <Productsquare
-              photos={pufferjacket}
-              name="Puffer Jacket"
-              price="LE 500.99 "
-              pic2={pufferjacket2}
-            ></Productsquare>
-            <Productsquare
-              photos={pufferjacket}
-              name="Puffer Jacket"
-              price="LE 500.99 "
-              pic2={pufferjacket2}
-            ></Productsquare>
-            <Productsquare
-              photos={pufferjacket}
-              name="Puffer Jacket"
-              price="LE 500.99 "
-              pic2={pufferjacket2}
-            ></Productsquare>
-            <Productsquare
-              photos={pufferjacket}
-              name="Puffer Jacket"
-              price="LE 500.99 "
-              pic2={pufferjacket2}
-            ></Productsquare>
-            <Productsquare
-              photos={pufferjacket}
-              name="Puffer Jacket"
-              price="LE 500.99 "
-              pic2={pufferjacket2}
-            ></Productsquare>
-            <Productsquare
-              photos={pufferjacket}
-              name="Puffer Jacket"
-              price="LE 500.99 "
-              pic2={pufferjacket2}
-            ></Productsquare>
-          </Slider>
-        </div>
-      </div>
 
       <Footer></Footer>
     </div>
