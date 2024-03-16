@@ -8,13 +8,14 @@ const Footer = () => {
       <ul className="footerlist">
         <li>Home</li>
         <li>Shop</li>
-        <li>Account </li>
+        <li id="accountlistfooter">Account </li>
         <li>Cart</li>
         <li>Wishlist</li>
         <li>Contact </li>
       </ul>
       <div className="footerline"></div>
       <h1 className="footerfollow">Follow us on</h1>
+
       <svg
         xmlns="http://www.w3.org/2000/svg"
         x="0px"

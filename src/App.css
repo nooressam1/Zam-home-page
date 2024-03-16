@@ -127,6 +127,7 @@
 }
 .girlpic:hover {
   filter: brightness(50%);
+  transition: 0.5s;
 }
 
 .bagpic {
@@ -136,6 +137,7 @@
 }
 .bagpic:hover {
   filter: brightness(50%);
+  transition: 0.5s;
 }
 .guypic {
   transition: 0.3s;
@@ -143,6 +145,7 @@
 }
 .guypic:hover {
   filter: brightness(50%);
+  transition: 0.5s;
 }
 .eeeborders {
   position: relative;
@@ -477,6 +480,7 @@
 }
 .navbarcontent:hover svg {
   stroke: white;
+  transition: 0.5s;
 }
 .navbarcontent h1 {
   color: rgb(161, 160, 160);
@@ -809,9 +813,7 @@
     background-size: 30px 30px !important;
     width: 5% !important;
     height: 10% !important;
-    &::before {
-      display: none;
-    }
+    margin-right: -10px !important;
   }
 
   .slick-prev {
@@ -819,6 +821,7 @@
     background-size: 30px 30px !important;
     width: 5% !important;
     height: 10% !important;
+    margin-left: -10px !important;
     &::before {
       display: none;
     }
@@ -1098,6 +1101,14 @@
   }
   .collageback {
     height: 80vh;
+  }
+  .slick-next {
+    background-size: 20px 25px !important;
+    margin-top: -20px !important;
+  }
+  .slick-prev {
+    background-size: 20px 25px !important;
+    margin-top: -20px !important;
   }
 }
 @media only screen and (max-width: 390px) {
