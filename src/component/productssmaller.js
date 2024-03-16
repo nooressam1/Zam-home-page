@@ -4,7 +4,7 @@ import "../App.css";
 
 const productssmaller = (props) => {
   return (
-    <div className="fulldivphoto">
+    <div data-aos="fade-up" className="fulldivphoto">
       <div className="smallerdiv">
         <div className="PhotoDiv">
           <img

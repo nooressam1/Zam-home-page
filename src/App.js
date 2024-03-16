@@ -20,7 +20,9 @@ import "slick-carousel/slick/slick-theme.css";
 import sliderproduct from "./component/sliderproduct";
 import Sliderproduct from "./component/sliderproduct";
 import Navbattail from "./component/navbattail";
-
+import AOS from "aos";
+import { useEffect } from "react";
+import "aos/dist/aos.css";
 function SampleNextArrow(props) {
   const { className, style, onClick } = props;
   return (
@@ -61,6 +63,10 @@ function App() {
     nextArrow: <SampleNextArrow className="nextarrow" />,
     prevArrow: <SamplePrevArrow className="prevarrow" />,
   };
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
   return (
     <div className="App">
       <Navbar page={"home"}></Navbar>
@@ -100,16 +106,16 @@ function App() {
         <div className="eeeborders">
           <h1 className="shopnowstyle">SHOP NOW</h1>
           <div className="catcontainer">
-            <div className="catphotos">
+            <div data-aos="zoom-in" className="catphotos">
               <img src={photogirl} className="girlpic" />
               <h1 classname="shoptext">Girls clothing</h1>
             </div>
 
-            <div className="catphotos">
+            <div data-aos="zoom-in" className="catphotos">
               <img src={bagpic} className="bagpic" />
               <h1>Bags</h1>
             </div>
-            <div className="catphotos">
+            <div data-aos="zoom-in" className="catphotos">
               <img src={man} className="guypic" />
               <h1>Mens clothing</h1>
             </div>
@@ -164,6 +170,7 @@ function App() {
 
       <div className="collageback">
         <div
+          data-aos="fade-up"
           classname="collagetextdiv"
           style={{
             textAlign: "center",
@@ -184,10 +191,10 @@ function App() {
           </h1>
         </div>
         <div className="photoscollagediv">
-          <div className="group1div">
+          <div data-aos="zoom-in" className="group1div">
             <img className="group1photo" src={group2} />
           </div>
-          <div className="group2div">
+          <div data-aos="zoom-in" className="group2div">
             <img className="group1photo" src={group3} />
           </div>
         </div>

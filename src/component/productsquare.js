@@ -1,9 +1,19 @@
 import React from "react";
 import "../componentpage.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
+
 let x = 0;
+
 const Productsquare = (props) => {
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
   return (
     <div
+      data-aos="fade-up"
       style={{
         width: "95%",
         position: "relative",
