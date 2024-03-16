@@ -177,11 +177,11 @@ function App() {
           <h2 className="Newcollecttext">NEW COLLECTION</h2>
           <h2 className="collectioname">Lorem Ipsum</h2>
           <div id="collectionline"></div>
-          <h2 className="descriptioncoll">
+          <h1 className="descriptioncoll">
             “Vivamus condimentum, ipsum non semper placerat, felis libero
             pulvinar quam, sit amet ullamcorper nunc enim quis magna.
             Pellentesque”
-          </h2>
+          </h1>
         </div>
         <div className="photoscollagediv">
           <div className="group1div">
