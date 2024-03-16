@@ -11,7 +11,7 @@ const Productsquare = (props) => {
         marginLeft: "1.5%",
       }}
     >
-      <div style={{ width: "100%", height: "70vh" }}>
+      <div className="photodivproduct">
         <div className="PhotoDivsmaller">
           <img
             src={props.photos}

@@ -29,10 +29,7 @@ function SampleNextArrow(props) {
       style={{
         ...style,
         display: "block",
-        background: "red",
-        width: "3%",
-        height: "7%",
-        marginRight: "-40px",
+        marginRight: "-2%",
       }}
       onClick={onClick}
     />
@@ -47,10 +44,9 @@ function SamplePrevArrow(props) {
       style={{
         ...style,
         display: "block",
-        background: "green",
-        width: "3%",
-        height: "7%",
-        marginLeft: "-40px",
+        width: "4vw",
+        height: "10vw",
+        marginLeft: "-2.5%",
       }}
       onClick={onClick}
     />
@@ -58,13 +54,12 @@ function SamplePrevArrow(props) {
 }
 function App() {
   const settings = {
-    dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 3,
+    slidesToShow: itemsshown(),
     slidesToScroll: 1,
-    nextArrow: <SampleNextArrow />,
-    prevArrow: <SamplePrevArrow />,
+    nextArrow: <SampleNextArrow className="nextarrow" />,
+    prevArrow: <SamplePrevArrow className="prevarrow" />,
   };
   return (
     <div className="App">
@@ -124,6 +119,48 @@ function App() {
 
       <h1 className="fontstyle">POPULAR ITEMS</h1>
       <div className="fontstyleline"></div>
+      <div style={{ marginTop: "2%", marginBottom: "2%" }}>
+        <div className="productbordersize">
+          <Slider {...settings}>
+            <Productsquare
+              photos={pufferjacket}
+              name="Puffer Jacket"
+              price="LE 500.99 "
+              pic2={pufferjacket2}
+            ></Productsquare>
+            <Productsquare
+              photos={pufferjacket}
+              name="Puffer Jacket"
+              price="LE 500.99 "
+              pic2={pufferjacket2}
+            ></Productsquare>
+            <Productsquare
+              photos={pufferjacket}
+              name="Puffer Jacket"
+              price="LE 500.99 "
+              pic2={pufferjacket2}
+            ></Productsquare>
+            <Productsquare
+              photos={pufferjacket}
+              name="Puffer Jacket"
+              price="LE 500.99 "
+              pic2={pufferjacket2}
+            ></Productsquare>
+            <Productsquare
+              photos={pufferjacket}
+              name="Puffer Jacket"
+              price="LE 500.99 "
+              pic2={pufferjacket2}
+            ></Productsquare>
+            <Productsquare
+              photos={pufferjacket}
+              name="Puffer Jacket"
+              price="LE 500.99 "
+              pic2={pufferjacket2}
+            ></Productsquare>
+          </Slider>
+        </div>
+      </div>
 
       <div className="collageback">
         */}
@@ -183,3 +220,12 @@ function App() {
 }
 
 export default App;
+function itemsshown() {
+  var w = window.innerWidth;
+
+  if (window.matchMedia("(min-width: 700px)").matches) {
+    return 3;
+  } else {
+    return 2;
+  }
+}
