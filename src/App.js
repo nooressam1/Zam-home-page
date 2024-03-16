@@ -163,20 +163,15 @@ function App() {
       </div>
 
       <div className="collageback">
-        */}
         <div
-          classname
+          classname="collagetextdiv"
           style={{
             textAlign: "center",
             margin: "auto",
             alignitems: "center",
             paddingTop: "2%",
             justifyContent: "center",
-            position: "relative",
-            justifyContent: "center",
             width: "80%",
-            marginBottom: "3%",
-            height: "20%",
           }}
         >
           <h2 className="Newcollecttext">NEW COLLECTION</h2>
@@ -188,13 +183,7 @@ function App() {
             Pellentesque”
           </h2>
         </div>
-        <div
-          style={{
-            width: "100%",
-            height: "100%",
-            position: "relative",
-          }}
-        >
+        <div className="photoscollagediv">
           <div className="group1div">
             <img className="group1photo" src={group2} />
           </div>
@@ -223,7 +212,7 @@ export default App;
 function itemsshown() {
   var w = window.innerWidth;
 
-  if (window.matchMedia("(min-width: 700px)").matches) {
+  if (window.matchMedia("(min-width: 790px)").matches) {
     return 3;
   } else {
     return 2;

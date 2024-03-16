@@ -22,7 +22,7 @@ const Productsquare = (props) => {
           />
         </div>
       </div>
-      <div style={{ marginLeft: "10px", marginTop: "10px" }}>
+      <div style={{ marginLeft: "10px", marginTop: "9px" }}>
         <h1
           className="producttext"
           style={{ display: "inline-block", position: "relative" }}
