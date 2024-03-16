@@ -194,7 +194,10 @@ function App() {
       </div>
 
       <h1 className="fontstyle">One sale</h1>
+
       <div className="fontstyleline"></div>
+
+      <Sliderproduct></Sliderproduct>
 
       <div className="hatdiv">
         <img src={girlhat} />
@@ -202,6 +205,48 @@ function App() {
       <h1 className="fontstyle2">You may</h1>
       <div className="fontstyleline2"></div>
       <h1 className="fontstyle1">also like</h1>
+      <div style={{ marginTop: "2%", marginBottom: "2%" }}>
+        <div className="productbordersize">
+          <Slider {...settings}>
+            <Productsquare
+              photos={pufferjacket}
+              name="Puffer Jacket"
+              price="LE 500.99 "
+              pic2={pufferjacket2}
+            ></Productsquare>
+            <Productsquare
+              photos={pufferjacket}
+              name="Puffer Jacket"
+              price="LE 500.99 "
+              pic2={pufferjacket2}
+            ></Productsquare>
+            <Productsquare
+              photos={pufferjacket}
+              name="Puffer Jacket"
+              price="LE 500.99 "
+              pic2={pufferjacket2}
+            ></Productsquare>
+            <Productsquare
+              photos={pufferjacket}
+              name="Puffer Jacket"
+              price="LE 500.99 "
+              pic2={pufferjacket2}
+            ></Productsquare>
+            <Productsquare
+              photos={pufferjacket}
+              name="Puffer Jacket"
+              price="LE 500.99 "
+              pic2={pufferjacket2}
+            ></Productsquare>
+            <Productsquare
+              photos={pufferjacket}
+              name="Puffer Jacket"
+              price="LE 500.99 "
+              pic2={pufferjacket2}
+            ></Productsquare>
+          </Slider>
+        </div>
+      </div>
 
       <Footer></Footer>
     </div>

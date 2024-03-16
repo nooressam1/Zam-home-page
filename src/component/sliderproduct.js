@@ -18,7 +18,7 @@ function SampleNextArrow(props) {
         background: "red",
         width: "3%",
         height: "7%",
-        marginRight: "-40px",
+        marginRight: "-18px",
       }}
       onClick={onClick}
     />
@@ -36,7 +36,7 @@ function SamplePrevArrow(props) {
         background: "green",
         width: "3%",
         height: "7%",
-        marginLeft: "-40px",
+        marginLeft: "-18px",
       }}
       onClick={onClick}
     />
@@ -44,10 +44,9 @@ function SamplePrevArrow(props) {
 }
 const Sliderproduct = () => {
   const settings = {
-    dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 4,
+    slidesToShow: itemsshown(),
     slidesToScroll: 1,
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
@@ -61,14 +60,7 @@ const Sliderproduct = () => {
         marginBottom: "2%",
       }}
     >
-      <div
-        style={{
-          marginLeft: "4%",
-          width: "88%",
-          position: "relative",
-          display: "inline-block",
-        }}
-      >
+      <div className="productsmallerdiv">
         <Slider {...settings}>
           <Productsquaresmaller
             photos={pufferjacket}
@@ -126,3 +118,14 @@ const Sliderproduct = () => {
 };
 
 export default Sliderproduct;
+function itemsshown() {
+  var w = window.innerWidth;
+
+  if (window.matchMedia("(max-width: 500px)").matches) {
+    return 2;
+  } else if (window.matchMedia("(min-width:790px )").matches) {
+    return 4;
+  } else {
+    return 3;
+  }
+}
