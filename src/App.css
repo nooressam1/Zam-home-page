@@ -616,6 +616,22 @@
     width: 5.5vw;
     margin-left: -7px;
   }
+  .shopnowstyle {
+    font-size: 4vw;
+  }
+  .catcontainer {
+    height: 20vh;
+
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+  .catphotos h1 {
+    font-size: 10px;
+  }
+  .bordersborder1 {
+    margin-top: -3%;
+    margin-bottom: 3%;
+  }
 }
 
 @media only screen and (max-width: 1000px) {
@@ -657,6 +673,22 @@
   }
   .squareborder {
     height: 7px;
+  }
+  .shopnowstyle {
+    font-size: 4vw;
+  }
+  .catcontainer {
+    height: 20vh;
+
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+  .catphotos h1 {
+    font-size: 10px;
+  }
+  .bordersborder1 {
+    margin-top: -5%;
+    margin-bottom: 3%;
   }
 }
 @media only screen and (max-width: 800px) {
@@ -714,6 +746,22 @@
     width: 6.5vw;
     margin-left: -7px;
   }
+  .shopnowstyle {
+    font-size: 4vw;
+  }
+  .catcontainer {
+    height: 20vh;
+
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+  .catphotos h1 {
+    font-size: 10px;
+  }
+  .bordersborder1 {
+    margin-top: -2%;
+    margin-bottom: 3%;
+  }
 }
 
 @media only screen and (max-width: 1350px) {
@@ -750,6 +798,41 @@
     height: 45px;
     width: 12vh;
     font-size: 1.2vw;
+  }
+  .shopnowstyle {
+    font-size: 3vw;
+  }
+  .catcontainer {
+    height: 65vh;
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+  .catphotos h1 {
+    font-size: 15px;
+  }
+  .bordersborder1 {
+    margin-top: 1%;
+    margin-bottom: 3%;
+  }
+  .Websitename {
+    font-size: 6.5vh;
+  }
+  #shopingcart {
+    height: 4vw;
+    width: 3vw;
+    text-align: center;
+  }
+  #shopingcart svg {
+    margin-top: 10px;
+  }
+  #menuicon {
+    height: 5vw;
+    width: 4vw;
+  }
+  #menuicon svg {
+    height: 4vw;
+    width: 5.5vw;
+    margin-left: -7px;
   }
 }
 @media only screen and (max-width: 650px) {
@@ -792,6 +875,22 @@
   }
   .squareborder {
     height: 6px;
+  }
+  .shopnowstyle {
+    font-size: 4vw;
+  }
+  .catcontainer {
+    height: 25vh;
+
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+  .catphotos h1 {
+    font-size: 10px;
+  }
+  .bordersborder1 {
+    margin-top: -5%;
+    margin-bottom: 3%;
   }
 }
 @media only screen and (max-width: 450px) {
@@ -855,6 +954,22 @@
   .squareborder {
     height: 5px;
   }
+  .shopnowstyle {
+    font-size: 3.5vw;
+  }
+  .catcontainer {
+    height: 20vh;
+
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+  .catphotos h1 {
+    font-size: 10px;
+  }
+  .bordersborder1 {
+    margin-top: -7%;
+    margin-bottom: 3%;
+  }
 }
 @media only screen and (max-width: 300px) {
   .sidebar {
@@ -896,5 +1011,20 @@
   }
   .squareborder {
     height: 3px;
+  }
+  .shopnowstyle {
+    font-size: 3vw;
+  }
+  .catcontainer {
+    height: 15vh;
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+  .catphotos h1 {
+    font-size: 10px;
+  }
+  .bordersborder1 {
+    margin-top: -9%;
+    margin-bottom: 3%;
   }
 }
