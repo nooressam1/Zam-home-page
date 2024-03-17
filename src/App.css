@@ -438,6 +438,57 @@
   width: 100%;
   height: 100vh;
 }
+.fullscreenmenucart {
+  position: fixed;
+  position: -webkit-sticky;
+  z-index: 100;
+  width: 100%;
+  height: 100vh;
+}
+.fullscreenmenucart.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.fullscreenmenucart.inactive {
+  display: none;
+
+  opacity: 0;
+  visibility: hidden;
+}
+.navbarcontentendcart {
+  width: 100%;
+  height: 6vw;
+  text-align: right;
+  background-color: #282727;
+  animation: 3s fadeIn;
+  position: absolute;
+  bottom: 0;
+}
+
+.cartendbuttonstyle {
+  color: #9c9c9c;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  font-family: "DM Sans", sans-serif;
+  border: 1px solid #9c9c9c;
+  padding-top: 1vw;
+  padding-bottom: 1vw;
+  font-size: 1vw;
+  border-radius: 0.5vw;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.cartendbuttonstyle:hover {
+  background-color: #555555;
+  color: white;
+  border: none;
+  transition: 0.5s;
+}
 .halfscreen {
   background-color: rgba(0, 0, 0, 0.5);
   width: 80%;
@@ -466,6 +517,62 @@
 
   opacity: 0;
   visibility: hidden;
+}
+.cartsidebar {
+  z-index: 40;
+  width: 30%;
+  height: 100%;
+  float: right;
+  text-align: left;
+  display: inline-block;
+  position: relative;
+  background-color: #1b1b1b;
+  animation: 1s slidenav;
+}
+.halfscreencart {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 70%;
+  height: 100%;
+  display: inline-block;
+  position: relative;
+  animation: halfslide 1s;
+}
+.contentdivcart {
+  margin-top: 0;
+}
+#usernamedivcart {
+  width: 100%;
+  height: 6vw;
+  top: 0;
+  position: relative;
+  text-align: center;
+  animation: 4s fadeIn;
+}
+#usernamedivcart h1 {
+  color: white;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 250;
+  font-optical-sizing: auto;
+  position: relative;
+  font-size: 3vh;
+  display: inline-block;
+  margin-top: 5%;
+  margin-right: 5px;
+}
+#usernamedivcart svg {
+  position: relative;
+  display: inline-block;
+  height: 4vh;
+  width: 4vh;
+  margin-right: 20px;
+  top: -4px;
+}
+.shopchartline {
+  width: 90%;
+  height: 0.12vw;
+  background-color: #4c4c4c;
+  margin-top: 3dvb;
+  margin-left: 5%;
 }
 .sidebar {
   z-index: 40;
