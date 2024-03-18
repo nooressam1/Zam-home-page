@@ -1,6 +1,6 @@
 import React from "react";
 import "../App.css";
-
+var x = 1;
 const Shoppingcartitem = (props) => {
   return (
     <div className="productfulldiv" id="totalproductdiv">
@@ -11,9 +11,13 @@ const Shoppingcartitem = (props) => {
         <h1 className="productnametext">{props.productname}</h1>
         <h1 className="productpricetext">{props.price}</h1>
         <div className="quantitydiv">
-          <button id="minusquantity">-</button>
-          <h1>1</h1>
-          <button id="addquantity">+</button>
+          <button onClick={() => minusquant()} id="minusquantity">
+            -
+          </button>
+          <h1 id="quantnum">1</h1>
+          <button onClick={() => addquant()} id="addquantity">
+            +
+          </button>
         </div>
       </div>
       <div className="closingicondiv">
@@ -39,5 +43,17 @@ const Shoppingcartitem = (props) => {
 };
 function deleteproduct() {
   document.getElementById("totalproductdiv").style.display = "none";
+}
+function minusquant() {
+  if (x == 1) {
+    document.getElementById("quantnum").innerHTML = "1";
+  } else {
+    x--;
+    document.getElementById("quantnum").innerHTML = x;
+  }
+}
+function addquant() {
+  x++;
+  document.getElementById("quantnum").innerHTML = x;
 }
 export default Shoppingcartitem;
