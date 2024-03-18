@@ -7,6 +7,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Buenard:wght@400;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Forum&family=Gowun+Dodum&family=Julius+Sans+One&family=Karla:ital,wght@0,200..800;1,200..800&family=Khula:wght@300;400;600;700;800&family=Koulen&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Mate+SC&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Buenard:wght@400;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Forum&family=Gowun+Dodum&family=Julius+Sans+One&family=Karla:ital,wght@0,200..800;1,200..800&family=Khula:wght@300;400;600;700;800&family=Koulen&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Mate+SC&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Buenard:wght@400;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Forum&family=Gowun+Dodum&family=Jost:ital,wght@0,100..900;1,100..900&family=Julius+Sans+One&family=Karla:ital,wght@0,200..800;1,200..800&family=Khula:wght@300;400;600;700;800&family=Koulen&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Mate+SC&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Buenard:wght@400;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Donegal+One&family=Forum&family=Gowun+Dodum&family=Jost:ital,wght@0,100..900;1,100..900&family=Julius+Sans+One&family=Karla:ital,wght@0,200..800;1,200..800&family=Khula:wght@300;400;600;700;800&family=Koulen&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Mate+SC&display=swap");
 .App {
   background-color: #454545;
 }
@@ -502,6 +504,78 @@
   margin-left: 3%;
   margin-right: 3%;
 }
+.productimagediv {
+  width: 9vw;
+  height: 9vw;
+  border: 2px solid white;
+  position: relative;
+  display: inline-block;
+  margin-left: 1.5vw;
+}
+
+.productnametext {
+  color: white;
+  font-family: "Forum", serif;
+  font-size: 2vw;
+}
+.productpricetext {
+  font-family: "Gowun Dodum", sans-serif;
+  color: rgb(178, 178, 178);
+}
+
+.productstextdiv {
+  position: relative;
+  display: inline-block;
+  margin-left: 10px;
+  top: -22%;
+}
+.productfulldiv {
+  position: relative;
+  width: 100%;
+  height: 10vw;
+  animation: 4s fadeIn;
+}
+.closingicondiv {
+  position: relative;
+  display: inline-block;
+  width: 20%;
+  height: 50%;
+  text-align: center;
+  right: -10px;
+  top: -4vw;
+}
+.productimage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#minusquantity {
+  position: relative;
+  display: inline-block;
+  color: white;
+  margin-right: 10px;
+}
+#addquantity {
+  position: relative;
+  display: inline-block;
+  color: white;
+  margin-left: 10px;
+}
+.quantitydiv {
+  background-color: #2b2b2b;
+  padding: 2px;
+  width: 4.5vw;
+  border-radius: 10px;
+  text-align: center;
+}
+.quantitydiv h1 {
+  position: relative;
+  font-family: "Donegal One", serif;
+
+  display: inline-block;
+  color: white;
+}
+
 #CheckoutButton:hover {
   color: #aaa9a9;
   background-color: #252525;
@@ -651,10 +725,11 @@
   top: -4px;
 }
 .shopchartline {
+  position: relative;
   width: 90%;
   height: 0.12vw;
   background-color: #4c4c4c;
-  margin-top: 3dvb;
+  margin-top: 10px;
   margin-left: 5%;
 }
 .sidebar {

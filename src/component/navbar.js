@@ -1,6 +1,8 @@
 import React from "react";
 import "../App.css";
 import react, { useState } from "react";
+import Shoppingitem from "../component/shoppingcartitem";
+import productitem from "../images/productitem.jpg";
 const Navbar = (props) => {
   const [open, setOpen] = useState(false);
   const [open2, setOpen2] = useState(false);
@@ -230,6 +232,16 @@ const Navbar = (props) => {
               <div className="shopchartline"></div>
             </div>
           </div>
+          <Shoppingitem
+            image={productitem}
+            productname="Puffer Jacket"
+            price="LE 570.00"
+          ></Shoppingitem>
+          <Shoppingitem
+            image={productitem}
+            productname="Puffer Jacket"
+            price="LE 570.00"
+          ></Shoppingitem>
           <div className="navbarcontentendcartProducts">
             <div className="grandtotaldiv">
               <div className="grandtotalline"></div>
