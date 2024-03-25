@@ -23,8 +23,22 @@ import Navbattail from "./component/navbattail";
 import AOS from "aos";
 import { useEffect } from "react";
 import "aos/dist/aos.css";
+
 function SampleNextArrow(props) {
   const { className, style, onClick } = props;
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+
+    setTimeout(() => {
+      AOS.refreshHard();
+    }, 3000);
+
+    return () => {
+      AOS.refreshHard();
+      AOS.refresh();
+    };
+  }, []);
   return (
     <div
       className={className}
