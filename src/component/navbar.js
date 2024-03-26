@@ -9,7 +9,7 @@ const Navbar = (props) => {
 
   return (
     <div>
-      <div className="navbar">
+      <div className="navbar1">
         <div>
           <button
             id="menuicon"

@@ -166,7 +166,10 @@
   margin-top: 2%;
   margin-bottom: 3%;
 }
-.navbar {
+
+/* "navbar" changed to navbar1 to not override tailwind */
+
+.navbar1 {
   position: fixed;
   position: -webkit-sticky;
   height: 70px;
@@ -190,7 +193,7 @@
   position: relative;
 }
 @media only screen and (max-width: 800px) {
-  .navbar {
+  .navbar1 {
     width: 100%;
   }
   #accounticon {
