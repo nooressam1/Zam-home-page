@@ -1,7 +1,20 @@
 import React from "react";
-import "../App.css";
+import "../cssComponent/shopingcart.css";
+import { useState } from "react";
 var x = 1;
+
 const Shoppingcartitem = (props) => {
+  const [counter, setCounter] = useState(1);
+
+  const incrementCounter = () => {
+    setCounter(counter + 1);
+  };
+
+  const decrementCounter = () => {
+    if (counter !== 0) {
+      setCounter(counter - 1);
+    }
+  };
   return (
     <div className="productfulldiv" id="totalproductdiv">
       <div className="productimagediv">
@@ -11,11 +24,11 @@ const Shoppingcartitem = (props) => {
         <h1 className="productnametext">{props.productname}</h1>
         <h1 className="productpricetext">{props.price}</h1>
         <div className="quantitydiv">
-          <button onClick={() => minusquant()} id="minusquantity">
+          <button onClick={decrementCounter} id="minusquantity">
             -
           </button>
-          <h1 id="quantnum">1</h1>
-          <button onClick={() => addquant()} id="addquantity">
+          <h1 id="quantnum">{counter}</h1>
+          <button onClick={incrementCounter} id="addquantity">
             +
           </button>
         </div>
@@ -44,16 +57,5 @@ const Shoppingcartitem = (props) => {
 function deleteproduct() {
   document.getElementById("totalproductdiv").style.display = "none";
 }
-function minusquant() {
-  if (x == 1) {
-    document.getElementById("quantnum").innerHTML = "1";
-  } else {
-    x--;
-    document.getElementById("quantnum").innerHTML = x;
-  }
-}
-function addquant() {
-  x++;
-  document.getElementById("quantnum").innerHTML = x;
-}
+
 export default Shoppingcartitem;

@@ -3,6 +3,7 @@ import "../App.css";
 import react, { useState } from "react";
 import Shoppingitem from "../component/shoppingcartitem";
 import productitem from "../images/productitem.jpg";
+import "../cssComponent/shopingcart.css";
 const Navbar = (props) => {
   const [open, setOpen] = useState(false);
   const [open2, setOpen2] = useState(false);
@@ -210,7 +211,7 @@ const Navbar = (props) => {
             console.log("pressed");
           }}
         ></div>
-        {/* this is for the side bar*/}
+        {/* this is for the cart side bar*/}
         <div className="cartsidebar">
           <div className="contentdivcart">
             <div id="usernamedivcart">
