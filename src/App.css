@@ -1438,13 +1438,14 @@
       opacity: 1;
     }
   }
-  /* .cartendbuttonstyle {
+  .cartendbuttonstyle {
     font-size: 2.5vw;
   }
+
   .navbarcontentendcart {
     height: 10vw;
   }
-  .cartsidebar {
+  .cartsidebarEmpty {
     width: 60%;
     animation: 1s slidenavcart;
   }
@@ -1457,8 +1458,8 @@
       width: 60%;
       height: 100%;
     }
-  } */
-  #accounticon {
+  }
+  */ #accounticon {
     display: none;
   }
   /* .halfscreencart {
@@ -1619,12 +1620,14 @@
       height: 100%;
     }
   }
-  /* .cartendbuttonstyle {
+  .cartendbuttonstyle {
     font-size: 2.5vw;
   }
+
   .navbarcontentendcart {
     height: 10vw;
   }
+  /*
   .cartsidebar {
     width: 70%;
     animation: 1s slidenavcart;
