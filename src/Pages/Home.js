@@ -23,6 +23,7 @@ import Navbattail from "../component/navbattail";
 import AOS from "aos";
 import { useEffect } from "react";
 import "aos/dist/aos.css";
+import Shopnowcarousel from "../component/shopnowcarousel";
 function SampleNextArrow(props) {
   const { className, style, onClick } = props;
   return (
@@ -102,26 +103,7 @@ function Home() {
         <div className="triangle  "></div>
       </div>
 
-      <div className="bordersborder1">
-        <div className="eeeborders">
-          <h1 className="shopnowstyle">SHOP NOW</h1>
-          <div className="catcontainer">
-            <div data-aos="zoom-in" className="catphotos">
-              <img src={photogirl} className="girlpic" />
-              <h1 classname="shoptext">Girls clothing</h1>
-            </div>
-
-            <div data-aos="zoom-in" className="catphotos">
-              <img src={bagpic} className="bagpic" />
-              <h1>Bags</h1>
-            </div>
-            <div data-aos="zoom-in" className="catphotos">
-              <img src={man} className="guypic" />
-              <h1>Mens clothing</h1>
-            </div>
-          </div>
-        </div>
-      </div>
+      <Shopnowcarousel></Shopnowcarousel>
 
       <h1 className="fontstyle">POPULAR ITEMS</h1>
       <div className="fontstyleline"></div>

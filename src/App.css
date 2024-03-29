@@ -81,91 +81,6 @@
   top: 0;
   display: block;
 }
-.catphotos {
-  position: relative;
-  overflow: hidden;
-  object-position: 25% 25%;
-  margin-right: 5%;
-  text-align: center;
-}
-.catphotos:hover h1 {
-  display: block;
-  transition: 0.3s;
-}
-.catphotos h1 {
-  position: relative;
-  z-index: 10px;
-  color: white;
-  width: 100%;
-  height: 50px;
-  top: -50%;
-  font-size: 20px;
-  display: none;
-  font-family: "Buenard", serif;
-  pointer-events: none;
-}
-
-.catphotos img {
-  object-fit: cover;
-  height: 100%;
-  width: 100%;
-  position: relative;
-}
-.catcontainer {
-  width: 95%;
-  height: 50vh;
-  display: grid;
-  grid-template-columns: 33% 33% 33%;
-  position: relative;
-  margin: auto;
-  margin-top: 2%;
-  margin-bottom: 2%;
-}
-.catcontainer::after {
-  height: max-content;
-}
-.girlpic {
-  object-position: 100% 80%;
-  transition: 0.3s;
-}
-.girlpic:hover {
-  filter: brightness(50%);
-  transition: 0.5s;
-}
-
-.bagpic {
-  transition: 0.3s;
-
-  object-position: 100% 80%;
-}
-.bagpic:hover {
-  filter: brightness(50%);
-  transition: 0.5s;
-}
-.guypic {
-  transition: 0.3s;
-  object-position: 100% 30%;
-}
-.guypic:hover {
-  filter: brightness(50%);
-  transition: 0.5s;
-}
-.eeeborders {
-  position: relative;
-  background-color: #222121;
-  padding: 10px;
-  width: 95%;
-  height: 100%;
-  margin-left: 2%;
-}
-.bordersborder1 {
-  position: relative;
-  width: 100%;
-  height: 100%;
-
-  margin-top: 2%;
-  margin-bottom: 3%;
-}
 
 /* "navbar" changed to navbar1 to not override tailwind */
 
@@ -610,6 +525,7 @@
   color: white;
   transition: 0.5s;
 }
+
 .navbarcontent:hover {
   border-color: #282727;
   background-color: #282727;
