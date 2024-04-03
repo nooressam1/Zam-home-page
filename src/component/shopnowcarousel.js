@@ -53,21 +53,29 @@ const Shopnowcarousel = () => {
         <h1 className="shopnowstyle">SHOP NOW</h1>
         <div className="catcontainer">
           <Slider {...settings}>
-            <div data-aos="zoom-in" className="catphotos">
-              <img src={photogirl} className="girlpic" />
-              <h1 classname="shoptext">Girls clothing</h1>
+            <div className="containersize">
+              <div data-aos="zoom-in" className="catphotos">
+                <img src={photogirl} className="girlpic" />
+                <h1 classname="shoptext">Girls clothing</h1>
+              </div>
             </div>
-            <div data-aos="zoom-in" className="catphotos">
-              <img src={bagpic} className="bagpic" />
-              <h1>Bags</h1>
-            </div>{" "}
-            <div data-aos="zoom-in" className="catphotos">
-              <img src={man} className="guypic" />
-              <h1>Mens clothing</h1>
+            <div className="containersize">
+              <div data-aos="zoom-in" className="catphotos">
+                <img src={bagpic} className="bagpic" />
+                <h1>Bags</h1>
+              </div>{" "}
             </div>
-            <div data-aos="zoom-in" className="catphotos">
-              <img src={man} className="guypic" />
-              <h1>Mens clothing</h1>
+            <div className="containersize">
+              <div data-aos="zoom-in" className="catphotos">
+                <img src={man} className="guypic" />
+                <h1>Mens clothing</h1>
+              </div>
+            </div>
+            <div>
+              <div data-aos="zoom-in" className="catphotos">
+                <img src={man} className="guypic" />
+                <h1>Mens clothing</h1>
+              </div>
             </div>
           </Slider>
         </div>{" "}

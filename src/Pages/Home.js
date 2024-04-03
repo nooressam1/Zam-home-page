@@ -24,6 +24,15 @@ import AOS from "aos";
 import { useEffect } from "react";
 import "aos/dist/aos.css";
 import Shopnowcarousel from "../component/shopnowcarousel";
+import react, { useState } from "react";
+import Quickviewpopup from "../component/Quickviewpopup";
+import "../cssComponent/Quickview.css";
+import jacketgirl1 from "../images/girlwithjacket1.jpg";
+import jacketgirl2 from "../images/girlwithjacket2.jpg";
+import jacketgirl3 from "../images/girlwithjacket3.jpg";
+import Signup from "../component/Signup";
+
+var open = false;
 function SampleNextArrow(props) {
   const { className, style, onClick } = props;
   return (
@@ -68,11 +77,21 @@ function Home() {
     AOS.init();
     AOS.refresh();
   }, []);
+
   return (
     <div className="App">
       <Navbar page={"home"}></Navbar>
-
-      {/*} <div
+      {/*  <Quickviewpopup
+        photo={jacketgirl1}
+        photo2={jacketgirl2}
+        photo3={jacketgirl3}
+        photo4={jacketgirl2}
+        name="Big jacket"
+        description="Lorem Ipsum is simply dummy text of the printing and typesetting industry.  "
+        price="400LE"
+      ></Quickviewpopup>
+     
+     } <div
         style={{
           backgroundImage: `url(${background1})`,
           backgroundSize: "contain",
@@ -149,6 +168,8 @@ function Home() {
           </Slider>
         </div>
       </div>
+
+      {open && <Quickviewpopup></Quickviewpopup>}
 
       <div className="collageback">
         <div

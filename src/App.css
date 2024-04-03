@@ -89,7 +89,6 @@
   position: -webkit-sticky;
   height: 70px;
   width: 100%;
-  background-color: transparent;
   z-index: 3;
   top: 0;
   right: 0;
@@ -99,6 +98,11 @@
 
   justify-content: center;
 }
+.navbar1-color {
+  transition: background-color 1s;
+  background-color: rgb(39, 39, 39);
+}
+
 #accounticon {
   display: inline-block;
   position: relative;
@@ -619,6 +623,7 @@
   position: relative;
   display: inline-block;
 }
+
 @media only screen and (max-width: 1200px) and (min-width: 1000px) and (max-height: 800px) {
   .sidebar {
     width: 25%;

@@ -7,14 +7,28 @@ import "../cssComponent/shopingcart.css";
 import "../cssComponent/ShoppingcartEmpty.css";
 import Shoppingcartitem from "../component/shoppingcartitem";
 import Shoppingcart from "./Shoppingcart.js";
+import Signup from "../component/Signup";
+import "../cssComponent/Signup.css";
 
 const Navbar = (props) => {
+  const [open3, setOpen3] = useState(false);
   const [open, setOpen] = useState(false);
   const [open2, setOpen2] = useState(false);
+  const [change1, Changecolor] = useState(false);
+  const NavChange = () => {
+    if (window.scrollY >= 70) {
+      Changecolor(true);
+      console.log("hell yeah");
+    } else {
+      console.log("hell no");
 
+      Changecolor(false);
+    }
+  };
+  window.addEventListener("scroll", NavChange);
   return (
     <div>
-      <div className="navbar1">
+      <div className={change1 ? "navbar1 navbar1-color" : "navbar1 "}>
         <div>
           <button
             id="menuicon"
@@ -37,6 +51,9 @@ const Navbar = (props) => {
 
           <button
             id="accounticon"
+            onClick={() => {
+              setOpen3(!open3);
+            }}
             className=" w-9 h-8 inline-block	float-right  my-1.5 mr-3"
           >
             <svg
@@ -230,6 +247,14 @@ const Navbar = (props) => {
           }}
         ></div>
         <Shoppingcart></Shoppingcart>
+      </div>
+      <div
+        className={`LoginScreenBlack ${open3 ? "active" : "inactive"}`}
+        onClick={() => {
+          setOpen3(!open3);
+        }}
+      >
+        <Signup></Signup>
       </div>
     </div>
   );
