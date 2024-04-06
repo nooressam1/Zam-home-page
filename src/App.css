@@ -13,6 +13,7 @@
 @import url("../src/cssComponent/shopnowcarousel.css");
 @import url("../src/cssComponent/ShoppingcartEmpty.css");
 @import url("../src/cssComponent/Signup.css");
+@import url("../src/cssComponent/componentpage.css");
 
 .App {
   background-color: #454545;

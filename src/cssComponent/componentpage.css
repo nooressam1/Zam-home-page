@@ -33,13 +33,13 @@
   margin-top: 4px;
   fill: none;
   -webkit-appearance: none;
-  background: url("./images/unfilledheart.png");
+  background: url("../images/unfilledheart.png");
   background-size: 100%;
   background-repeat: no-repeat;
   transition: 0.5s;
 }
 .heartlist:checked {
-  background: url("./images/filledheart.png");
+  background: url("../images/filledheart.png");
   background-size: 100%;
   background-repeat: no-repeat;
   transition: 0.5s;
