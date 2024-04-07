@@ -1,6 +1,7 @@
 import React from "react";
 import "./App.css";
 import Home from "./Pages/Home";
+import Shop from "./Pages/ShopNow";
 import {
   BrowserRouter as Router,
   Routes,
@@ -16,7 +17,8 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
-        {/* Example: <Route path="/shop" element={<Shop />} /> */}
+        {/*Example: <Route path="/shop" element={<Shop />} /> */}
+        <Route path="/shop" element={<Shop />} />
       </Routes>
     </Router>
   );

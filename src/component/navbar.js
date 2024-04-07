@@ -270,7 +270,8 @@ function switchnav(page) {
     case "shop":
       document.getElementById("shopnav").style.backgroundColor = "#282727";
       document.getElementById("shopnavtext").style.color = "white";
-      document.getElementById("shopicon").style.fill = "white";
+      document.getElementById("shopicon").style.stroke = "white";
+      document.getElementById("shopicon").style.fill = "none";
 
       break;
 

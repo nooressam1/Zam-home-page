@@ -19,7 +19,6 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import sliderproduct from "../component/sliderproduct";
 import Sliderproduct from "../component/sliderproduct";
-import Navbattail from "../component/navbattail";
 import AOS from "aos";
 import { useEffect } from "react";
 import "aos/dist/aos.css";
