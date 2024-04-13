@@ -8,7 +8,12 @@ const ShoppingcartEmpty = () => {
   const [open2, setOpen2] = useState(false);
 
   return (
-    <div className="cartsidebarEmpty">
+    <div
+      className="cartsidebarEmpty"
+      onClick={(e) => {
+        e.stopPropagation();
+      }}
+    >
       <div className="contentdivcartEmpty">
         <div id="usernamedivcartEmpty">
           <svg

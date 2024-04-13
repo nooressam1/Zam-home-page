@@ -13,7 +13,8 @@ import pufferjacket from "../images/girlwithpuffer.jpg";
 import Footer from "../component/footer";
 import pufferjacket2 from "../images/girlwithpuffer2.jpg";
 import girlhat from "../images/girlwithhat.jpg";
-
+import react, { useState } from "react";
+import FilterandSortbybar from "../component/FilterandSortbybar.js";
 // function Textwidth() {
 //   var letters = document.querySelectorAll("categorytext");
 //   var letters1 = document.querySelectorAll("catergorydiv");
@@ -29,7 +30,7 @@ import girlhat from "../images/girlwithhat.jpg";
 // }
 var divnumber = 1;
 var divposition = 0;
-
+var pageloader = 0;
 var counter = 0;
 var counter1 = 0;
 var counter2 = 0;
@@ -78,6 +79,8 @@ function SamplePrevArrow(props) {
   );
 }
 function ShopNow() {
+  const [openfilter, setfilter] = useState(false);
+
   const settings = {
     infinite: true,
     speed: 500,
@@ -92,6 +95,7 @@ function ShopNow() {
       <div className="backgroundsize">
         <img class="photobgsize" src={backgroundphot}></img>
       </div>
+
       <div id="buttonpositions">
         <div id="searchdiv">
           <div id="searchtextdiv">
@@ -130,7 +134,12 @@ function ShopNow() {
             </svg>
           </div>
         </div>
-        <div id="FSbuttondesign">
+        <div
+          id="FSbuttondesign"
+          onClick={(e) => {
+            setfilter(!openfilter);
+          }}
+        >
           <button className="buttonstyle">
             Sort by
             <svg
@@ -157,8 +166,8 @@ function ShopNow() {
                     stroke-width="1.5"
                     stroke-linecap="round"
                     stroke-linejoin="round"
-                  ></path>{" "}
-                </g>{" "}
+                  ></path>
+                </g>
               </g>
             </svg>
           </button>
@@ -190,6 +199,16 @@ function ShopNow() {
             </svg>
           </button>
         </div>
+      </div>
+      <div
+        className={`FilterBackgroundDiv ${
+          openfilter ? "FilterBackgroundDivactive" : "FilterBackgroundDiv"
+        }`}
+        onClick={(e) => {
+          setfilter(!openfilter);
+        }}
+      >
+        <FilterandSortbybar></FilterandSortbybar>
       </div>
       <div className="categoryTextstyle">
         <Slider {...settings}>
@@ -972,6 +991,7 @@ function ShopNow() {
           </svg>
         </button>
       </div>
+
       <Footer></Footer>
     </div>
   );

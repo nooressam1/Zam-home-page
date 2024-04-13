@@ -4,7 +4,12 @@ import Shoppingitem from "../component/shoppingcartitem";
 import productitem from "../images/productitem.jpg";
 const Shoppingcart = () => {
   return (
-    <div className="cartsidebar">
+    <div
+      className="cartsidebar"
+      onClick={(e) => {
+        e.stopPropagation();
+      }}
+    >
       <div className="contentdivcart">
         <div id="usernamedivcart">
           <svg

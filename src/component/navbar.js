@@ -94,16 +94,20 @@ const Navbar = (props) => {
         </div>
         <h7 className="Websitename"> ZAM </h7>
       </div>
-      <div className={`fullscreenmenu ${open ? "active" : "inactive"}`}>
-        <div
-          className="halfscreen"
-          onClick={() => {
-            setOpen(!open);
-            console.log("pressed");
-          }}
-        ></div>
+      <div
+        className={`fullscreenmenu ${open ? "active" : "inactive"}`}
+        onClick={() => {
+          setOpen(!open);
+          console.log("pressed");
+        }}
+      >
         {/* this is for the side bar*/}
-        <div className="sidebar">
+        <div
+          className="sidebar"
+          onClick={(e) => {
+            e.stopPropagation();
+          }}
+        >
           <div className="contentdiv">
             <div id="usernamediv">
               <h1>Username</h1>
@@ -133,24 +137,29 @@ const Navbar = (props) => {
 
               <h1 id="homenavtext">Home</h1>
             </div>
-            <div className="navbarcontent" id="shopnav">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="gray"
-                id="shopicon"
-                className="animationsicon"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"
-                />
-              </svg>
-
-              <h1 id="shopnavtext">Shop</h1>
+            <div
+              className="navbarcontent cursor-pointer"
+              id="shopnav"
+              href="/shop"
+            >
+              <a href="/shop">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="gray"
+                  id="shopicon"
+                  className="animationsicon"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"
+                  />
+                </svg>
+                <h1 id="shopnavtext">Shop</h1>
+              </a>
             </div>
             <div className="navbarcontent" id="wishlistnav">
               <svg
@@ -224,28 +233,24 @@ const Navbar = (props) => {
       </div>
       {/*           this is for the Empty side bar
 
-     <div className={`fullscreenmenucart ${open2 ? "active" : "inactive"}`}>
-        <div
-          className="halfscreencartEmpty"
-          onClick={() => {
+     <div className={`fullscreenmenucart ${open2 ? "active" : "inactive"}`}   onClick={() => {
             setOpen2(!open2);
             showitems();
             console.log("pressed");
-          }}
-        ></div>
+          }}>
+       
         <Shoppingcartempty></Shoppingcartempty> 
  
       </div>*/}
       {/* This is the shopping cart with productts*/}
-      <div className={`fullscreenmenucart ${open2 ? "active" : "inactive"}`}>
-        <div
-          className="halfscreencart"
-          onClick={() => {
-            setOpen2(!open2);
-            showitems();
-            console.log("pressed");
-          }}
-        ></div>
+      <div
+        className={`fullscreenmenucart ${open2 ? "active" : "inactive"}`}
+        onClick={() => {
+          setOpen2(!open2);
+          showitems();
+          console.log("pressed");
+        }}
+      >
         <Shoppingcart></Shoppingcart>
       </div>
       <div

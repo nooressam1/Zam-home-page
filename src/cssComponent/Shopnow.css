@@ -276,9 +276,19 @@ html {
   display: inline-block;
   margin-right: 0.7vw;
 }
-#arrowendpageright {
+.arrowendpageright {
   position: relative;
   display: inline-block;
+}
+.arrowfilter {
+  position: relative;
+  display: inline-block;
+  width: 2vw;
+  height: 2vw;
+}
+.arrowfilterHidden {
+  position: relative;
+  display: none;
 }
 .swapdivpage {
   width: 100%;
@@ -302,4 +312,364 @@ html {
   top: -2px;
   margin-right: 0.2vw;
   visibility: visible;
+}
+
+.FilterBackgroundDiv {
+  position: fixed;
+  position: -webkit-sticky;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  top: 0;
+}
+.FilterBackgroundDivactive {
+  display: block;
+}
+.FilterContentDiv {
+  position: relative;
+  z-index: 30;
+  background-color: #1b1b1b;
+  width: 30%;
+  float: right;
+  height: 47.5vw;
+  overflow: auto;
+  animation: slidefilter 1s;
+  right: 0;
+}
+@keyframes slidefilter {
+  0% {
+    right: -50vw;
+  }
+  100% {
+    right: 0;
+  }
+}
+.FilterContent svg {
+  stroke: #b8b8b8;
+  cursor: pointer;
+}
+.FilterContent {
+  padding: 1vw;
+  transition: 1s;
+  color: rgb(233, 232, 232);
+
+  background-color: transparent;
+}
+.FilterContentactive {
+  background-color: #2a2a2a !important;
+  padding: 1vw;
+}
+
+.FilterContent:hover {
+  background-color: #2a2a2a;
+}
+.FiltercontentText {
+  color: #b8b8b8;
+  font-family: "Karla", sans-serif;
+  width: 90%;
+  font-size: 1.2vw;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+#FilterTitle {
+  color: #b8b8b8;
+  font-family: "Karla", sans-serif;
+  font-size: 1.5vw;
+  width: 100%;
+  text-align: center;
+  padding: 1vw;
+}
+.FilterLine {
+  width: 90%;
+  background-color: #4c4c4c;
+  height: 0.1vw;
+  margin-left: 1vw;
+  margin-bottom: 1vw;
+}
+.arrowenddown {
+  position: relative;
+  display: none;
+  stroke: #b8b8b8;
+}
+.arrowenddownactive {
+  stroke: #b8b8b8;
+  position: relative;
+  display: inline-block;
+  width: 2vw;
+  height: 2vw;
+}
+
+.SizeContentDiv {
+  background-color: #181818;
+  position: relative;
+  width: 100%;
+  display: none;
+}
+.SizeContentDiv.active {
+  display: block;
+}
+
+.SizeContentDiv h1 {
+  color: #b8b8b8;
+  font-family: "Karla", sans-serif;
+  width: 90%;
+  font-size: 1vw;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  padding: 1vw;
+}
+.sortbyDiv:hover {
+  background-color: #161616;
+}
+.sortbyDivactive #checkmarkfilter {
+  position: relative;
+  display: inline-block;
+}
+#checkmarkfilter {
+  position: relative;
+  display: none;
+  stroke: #b8b8b8;
+}
+
+.InputSize {
+  appearance: none;
+  background: transparent;
+  outline: 1px solid #7d7d7d;
+  border: 2px solid transparent;
+  width: 0.8vw;
+  height: 0.8vw;
+  margin-left: 1vw;
+  margin-top: 1vw;
+}
+#sizedivpositio {
+  padding-top: 1vw;
+  padding-bottom: 1vw;
+}
+.InputSize:checked {
+  background: white;
+  border: 3px solid #2a2a2a;
+}
+.LabelSize {
+  color: #7d7d7d;
+  font-family: "Karla", sans-serif;
+  font-size: 1.1vw;
+  padding-left: 1vw;
+  padding-right: 1vw;
+}
+/* start of colors */
+.FiltercolorDiv {
+  background-color: #181818;
+  position: relative;
+  width: 100%;
+  display: none;
+}
+.FiltercolorDivactive {
+  display: block;
+}
+
+.container {
+  display: inline-block;
+  position: relative;
+  padding-left: 2.3vw;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 10px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 0.5vw;
+  color: #181818;
+}
+
+/* Hide the browser's default radio button */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1.3vw;
+  width: 1.3vw;
+  background-color: #eee;
+  border-radius: 50%;
+  box-shadow: 2px 2px 2px rgb(23, 23, 23);
+  margin-top: -5px;
+  margin-left: 1vw;
+  margin-right: 1vw;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #2196f3;
+  border: 1px solid white;
+}
+#color1 {
+  background-color: rgb(77, 1, 77);
+}
+#color2 {
+  background-color: rgb(146, 95, 1);
+}
+#color3 {
+  background-color: rgb(138, 1, 1);
+}
+
+#color4 {
+  background-color: rgb(1, 84, 1);
+}
+#color5 {
+  background-color: #790b0b;
+}
+#color6 {
+  background-color: #375a13;
+}
+#color7 {
+  background-color: #31697b;
+}
+#color8 {
+  background-color: #ad8f63;
+}
+#color9 {
+  background-color: #614171;
+}
+#color10 {
+  background-color: #4e6b52;
+}
+#color11 {
+  background-color: #616328;
+}
+#color12 {
+  background-color: #371957;
+}
+#color13 {
+  background-color: #286358;
+}
+#color14 {
+  background-color: #633928;
+}
+#color15 {
+  background-color: #1b637f;
+}
+.colorstyle:active {
+  border: 0.15em solid white;
+}
+#FilterColorposition {
+  padding: 1.5vw;
+}
+.Materialdivposition {
+  padding-top: 1vw;
+  padding-bottom: 1vw;
+}
+.Rangetextstyle {
+  color: #575757;
+  font-family: "Karla", sans-serif;
+  margin-left: 1vw;
+  margin-right: 1vw;
+  font-size: 1vw;
+}
+input[type="range"] {
+  height: 2px;
+  -webkit-appearance: none;
+  margin: 10px 0;
+  width: 50%;
+}
+input[type="range"]:focus {
+  outline: none;
+}
+input[type="range"]::-webkit-slider-runnable-track {
+  width: 50%;
+  height: 2px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: #686868;
+  border-radius: 5px;
+  border: 0px solid #000000;
+}
+input[type="range"]::-webkit-slider-thumb {
+  height: 1vw;
+  width: 1vw;
+  border-radius: 2vw;
+  background: #a5a5a5;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -7.5px;
+}
+input[type="range"]:focus::-webkit-slider-runnable-track {
+  background: #575757;
+}
+input[type="range"]::-moz-range-track {
+  width: 100%;
+  height: 10px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: #575757;
+  border-radius: 5px;
+}
+input[type="range"]::-moz-range-thumb {
+  box-shadow: 1px 1px 1px #000000;
+  border: 1px solid #000000;
+  height: 30px;
+  width: 15px;
+  border-radius: 5px;
+  background: 000000;
+  cursor: pointer;
+}
+input[type="range"]::-ms-track {
+  width: 50%;
+  height: 10px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+input[type="range"]::-ms-fill-lower {
+  background: #3071a9;
+  border: 0px solid #000000;
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px #000000;
+}
+input[type="range"]::-ms-fill-upper {
+  background: #3071a9;
+  border: 0px solid #000000;
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px #000000;
+}
+input[type="range"]::-ms-thumb {
+  margin-top: 1px;
+  box-shadow: 1px 1px 1px #000000;
+  border: 1px solid #000000;
+  height: 30px;
+  width: 15px;
+  border-radius: 5px;
+  background: #000000;
+  cursor: pointer;
+}
+input[type="range"]:focus::-ms-fill-lower {
+  background: #3071a9;
+}
+input[type="range"]:focus::-ms-fill-upper {
+  background: #3071a9;
+}
+.rangestyle::-webkit-slider-runnable-track {
+  -webkit-appearance: none;
+  box-shadow: none;
+  border: none;
+  background: transparent;
+}
+.Pricediv {
+  padding: 1vw;
 }
