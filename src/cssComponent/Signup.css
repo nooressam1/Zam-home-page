@@ -32,6 +32,15 @@
   top: 20%;
   border-radius: 20px;
   box-shadow: 2px 2px 5px rgb(27, 26, 26);
+  animation: jumpup 1s;
+}
+@keyframes jumpup {
+  0% {
+    top: 20vw;
+  }
+  100% {
+    top: 20%;
+  }
 }
 .LoginText {
   color: white;

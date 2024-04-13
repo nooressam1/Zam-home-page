@@ -340,7 +340,7 @@ html {
 }
 @keyframes slidefilter {
   0% {
-    right: -50vw;
+    right: -30vw;
   }
   100% {
     right: 0;
