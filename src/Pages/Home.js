@@ -55,8 +55,6 @@ function SamplePrevArrow(props) {
       style={{
         ...style,
         display: "block",
-        width: "4vw",
-        height: "10vw",
         marginLeft: "-2.5%",
       }}
       onClick={onClick}

@@ -71,7 +71,7 @@ const Shopnowcarousel = () => {
                 <h1>Mens clothing</h1>
               </div>
             </div>
-            <div>
+            <div className="containersize">
               <div data-aos="zoom-in" className="catphotos">
                 <img src={man} className="guypic" />
                 <h1>Mens clothing</h1>

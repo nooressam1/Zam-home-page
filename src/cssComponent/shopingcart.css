@@ -214,34 +214,7 @@
     width: 35%;
     animation: 1s slidenavcart;
   }
-  @keyframes slidenavcart {
-    0% {
-      width: 20%;
-      height: 100%;
-    }
-    100% {
-      width: 35%;
-      height: 100%;
-    }
-  }
-  .halfscreencart {
-    background-color: rgba(0, 0, 0, 0.5);
-    width: 65%;
-    height: 100%;
-    display: inline-block;
-    position: relative;
-    animation: halfslidecart 1s;
-  }
-  @keyframes halfslidecart {
-    0% {
-      width: 80%;
-      height: 100%;
-    }
-    100% {
-      width: 65%;
-      height: 100%;
-    }
-  }
+
   .navbarcontentendcartProducts {
     height: 12vw;
   }
@@ -292,38 +265,7 @@
     width: 40%;
     animation: 1s slidenavcart;
   }
-  .productimagediv {
-    width: 12vw;
-    height: 12vw;
-  }
-  @keyframes slidenavcart {
-    0% {
-      width: 20%;
-      height: 100%;
-    }
-    100% {
-      width: 40%;
-      height: 100%;
-    }
-  }
-  .halfscreencart {
-    background-color: rgba(0, 0, 0, 0.5);
-    width: 60%;
-    height: 100%;
-    display: inline-block;
-    position: relative;
-    animation: halfslidecart 1s;
-  }
-  @keyframes halfslidecart {
-    0% {
-      width: 80%;
-      height: 100%;
-    }
-    100% {
-      width: 60%;
-      height: 100%;
-    }
-  }
+
   .navbarcontentendcartProducts {
     height: 15vw;
   }
@@ -385,34 +327,7 @@
     width: 21vw;
     height: 21vw;
   }
-  @keyframes slidenavcart {
-    0% {
-      width: 20%;
-      height: 100%;
-    }
-    100% {
-      width: 70%;
-      height: 100%;
-    }
-  }
-  .halfscreencart {
-    background-color: rgba(0, 0, 0, 0.5);
-    width: 30%;
-    height: 100%;
-    display: inline-block;
-    position: relative;
-    animation: halfslidecart 1s;
-  }
-  @keyframes halfslidecart {
-    0% {
-      width: 80%;
-      height: 100%;
-    }
-    100% {
-      width: 30%;
-      height: 100%;
-    }
-  }
+
   .navbarcontentendcartProducts {
     height: 30vw;
   }
@@ -480,16 +395,7 @@
     width: 70%;
     animation: 1s slidenavcart;
   }
-  @keyframes slidenavcart {
-    0% {
-      width: 40%;
-      height: 100%;
-    }
-    100% {
-      width: 70%;
-      height: 100%;
-    }
-  }
+
   .halfscreencart {
     animation: halfslidecart 1s;
   }

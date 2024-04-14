@@ -1,6 +1,7 @@
 import React from "react";
 import "../App.css";
 import react, { useState } from "react";
+import "../cssComponent/navbar.css";
 
 import Shoppingcartempty from "../component/ShoppingcartEmpty.js";
 import "../cssComponent/shopingcart.css";
@@ -71,7 +72,7 @@ const Navbar = (props) => {
           </button>
 
           <button
-            className=" w-9 h-8 inline-block	float-right  my-1.5 mr-3"
+            className=" w-9 h-8 inline-block	float-right  my-3 mr-3"
             id="shopingcart"
             onClick={() => {
               setOpen2(!open2);
@@ -82,7 +83,7 @@ const Navbar = (props) => {
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
               fill="White"
-              className=" inline-block float-right my-2	"
+              className=" inline-block float-right 	"
             >
               <path
                 fillRule="evenodd"
