@@ -107,7 +107,7 @@ function Home() {
       <div
         style={{
           width: "100%",
-          height: "7vh",
+          height: "5vw",
           overflow: "hidden",
           margin: "auto",
           display: "block",

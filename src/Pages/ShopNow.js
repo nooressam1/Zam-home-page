@@ -50,7 +50,7 @@ function SampleNextArrow(props) {
 
   return (
     <div
-      className={className}
+      className="filterarrowright"
       style={{
         ...style,
         display: "block",
@@ -66,13 +66,9 @@ function SamplePrevArrow(props) {
   return (
     // window.addEventListener("load", Textwidth),
     <div
-      className={className}
+      className="filterarrowleft"
       style={{
         ...style,
-        display: "block",
-        width: "4vw",
-        height: "10vw",
-        marginLeft: "-2.5%",
       }}
       onClick={onClick}
     />

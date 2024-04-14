@@ -30,16 +30,33 @@ const Shoppingcart = () => {
           <div className="shopchartline"></div>
         </div>
       </div>
-      <Shoppingitem
-        image={productitem}
-        productname="Puffer Jacket"
-        price="LE 570.00"
-      ></Shoppingitem>
-      <Shoppingitem
-        image={productitem}
-        productname="Puffer Jacket"
-        price="LE 570.00"
-      ></Shoppingitem>
+      <div id="shopingcartproductlocation">
+        <Shoppingitem
+          image={productitem}
+          productname="Puffer Jacket"
+          price="LE 570.00"
+        ></Shoppingitem>
+        <Shoppingitem
+          image={productitem}
+          productname="Puffer Jacket"
+          price="LE 570.00"
+        ></Shoppingitem>
+        <Shoppingitem
+          image={productitem}
+          productname="Puffer Jacket"
+          price="LE 570.00"
+        ></Shoppingitem>
+        <Shoppingitem
+          image={productitem}
+          productname="Puffer Jacket"
+          price="LE 570.00"
+        ></Shoppingitem>
+        <Shoppingitem
+          image={productitem}
+          productname="Puffer Jacket"
+          price="LE 570.00"
+        ></Shoppingitem>
+      </div>
       <div className="navbarcontentendcartProducts">
         <div className="grandtotaldiv">
           <div className="grandtotalline"></div>
